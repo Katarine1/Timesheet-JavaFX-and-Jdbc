@@ -1,0 +1,76 @@
+/* CSS Times */
+
+.anchor_pane{
+	-fx-background-color:white;	
+}
+
+.cell_time, .cell_start,.cell_end,.cell_sunday,
+.cell_monday,.cell_tuesday,.cell_fourth,
+.cell_fifth,.cell_friday,.cell_saturday
+{
+	-fx-alignment:center;	
+	-fx-font-size: 9.5pt;
+	-fx-font-weight: bold;
+	-fx-text-fill: blue;	
+	-fx-opacity: 0.9;
+	/*-fx-border-color:#ccc;*/
+	-fx-background-color:white;	
+}
+
+.cell_time {
+	-fx-background-color:white;	
+	-fx-text-fill: #00b300;
+}
+
+.cell_start {
+	-fx-background-color:white;
+	-fx-text-fill:#ff6699;
+}
+
+.cell_end {
+	-fx-background-color:white;
+	-fx-text-fill:#ff6699;
+}
+
+.cell_sunday {
+	-fx-background-color:white;
+	-fx-text-fill: red;
+}
+
+.cell_monday {
+	-fx-background-color:white;
+}
+
+.cell_tuesday {
+	-fx-background-color:white;
+}
+
+.cell_fourth {
+	-fx-background-color: white;
+}
+
+.cell_fifth {
+	-fx-background-color:white;
+}
+
+.cell_friday {
+	-fx-background-color:white;
+}
+
+.cell_saturday {
+	-fx-background-color:white;
+	-fx-text-fill: #ff9900;
+}
+
+.cell_tempo, .cell_inicio,.cell_final,.cell_dom,
+.cell_seg,.cell_ter,.cell_qua,
+.cell_qui,.cell_sex,.cell_sabado
+{
+	-fx-alignment:center;	
+	-fx-font-size: 9.5pt;
+	-fx-background-color:white;	
+}
+
+.table_time{
+	-fx-background-color:white;	
+}

@@ -1,0 +1,13 @@
+/* CSS TextFields */
+.text
+{
+	-fx-border-color:black;
+	-fx-text-fill: blue;
+	-fx-font-weight: bold;
+}
+
+.title
+{
+	-fx-font-weight: bold;
+	-fx-font-size: 14pt;
+}

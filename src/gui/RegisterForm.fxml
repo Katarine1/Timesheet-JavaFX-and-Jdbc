@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="222.0" minWidth="310.0" prefHeight="603.0" prefWidth="444.0" styleClass="anchor_pane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RegisterController">
+   <children>
+      <Label fx:id="textStartH" layoutX="12.0" layoutY="14.0" styleClass="title" text="Start Hour">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textHourStartHH" alignment="CENTER" editable="false" layoutX="107.0" layoutY="68.0" prefHeight="25.0" prefWidth="30.0" promptText="00" styleClass="text" />
+      <Button fx:id="btnSave" layoutX="175.0" layoutY="504.0" mnemonicParsing="false" onAction="#onBtnSave" styleClass="btn_save" text="SAVE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="labelResult1" alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="541.0" textFill="RED" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="-2.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="textMatter" layoutX="18.0" layoutY="193.0" styleClass="title" text="Register Matter">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="textEndH" layoutX="205.0" layoutY="14.0" styleClass="title" text="End Hour">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textHourEndHH" alignment="CENTER" editable="false" layoutX="294.0" layoutY="67.0" prefHeight="25.0" prefWidth="30.0" promptText="00" styleClass="text" />
+      <Button fx:id="btnSunday" layoutX="19.0" layoutY="259.0" mnemonicParsing="false" onAction="#onBtnSunday" prefHeight="27.0" prefWidth="89.0" styleClass="btn_sunday" text="Suday" />
+      <Button fx:id="btnMonday" layoutX="19.0" layoutY="292.0" mnemonicParsing="false" onAction="#onBtnMonday" prefHeight="27.0" prefWidth="89.0" styleClass="btn_monday" text="Monday" />
+      <Button fx:id="btnTuesday" layoutX="19.0" layoutY="325.0" mnemonicParsing="false" onAction="#onBtnTuesday" prefHeight="27.0" prefWidth="89.0" styleClass="btn_tuesday" text="Tuesday" />
+      <Button fx:id="btnFourth" layoutX="19.0" layoutY="358.0" mnemonicParsing="false" onAction="#onBtnFourth" prefHeight="27.0" prefWidth="89.0" styleClass="btn_fourth" text="Fourth" />
+      <Button fx:id="btnFifth" layoutX="19.0" layoutY="392.0" mnemonicParsing="false" onAction="#onBtnFifth" prefHeight="27.0" prefWidth="89.0" styleClass="btn_fifth" text="Fifth" />
+      <Button fx:id="btnFriday" layoutX="19.0" layoutY="425.0" mnemonicParsing="false" onAction="#onBtnFriday" prefHeight="27.0" prefWidth="89.0" styleClass="btn_friday" text="Fryday" />
+      <Button fx:id="btnSaturday" layoutX="19.0" layoutY="461.0" mnemonicParsing="false" onAction="#onBtnSaturday" prefHeight="27.0" prefWidth="89.0" styleClass="btn_saturday" text="Saturday" />
+      <TextField fx:id="textSunday" layoutX="166.0" layoutY="259.0" prefHeight="25.0" prefWidth="264.0" promptText="Matter  (Matéria)" styleClass="text" />
+      <TextField fx:id="textMonday" layoutX="166.0" layoutY="292.0" prefHeight="25.0" prefWidth="264.0" promptText="Matter  (Matéria)" styleClass="text" />
+      <TextField fx:id="textTuesday" layoutX="166.0" layoutY="325.0" prefHeight="25.0" prefWidth="264.0" promptText="Matter  (Matéria)" styleClass="text" />
+      <TextField fx:id="textFourth" layoutX="166.0" layoutY="358.0" prefHeight="25.0" prefWidth="264.0" promptText="Matter  (Matéria)" styleClass="text" />
+      <TextField fx:id="textFifth" layoutX="166.0" layoutY="392.0" prefHeight="25.0" prefWidth="264.0" promptText="Matter  (Matéria)" styleClass="text" />
+      <TextField fx:id="textFriday" layoutX="166.0" layoutY="425.0" prefHeight="25.0" prefWidth="264.0" promptText="Matter  (Matéria)" styleClass="text" />
+      <TextField fx:id="textSaturday" layoutX="166.0" layoutY="461.0" prefHeight="25.0" prefWidth="264.0" promptText="Matter  (Matéria)" styleClass="text" />
+      <Label fx:id="labelDoisPontos1" layoutX="143.0" layoutY="66.0" text=":">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textHourStartMM" alignment="CENTER" editable="false" layoutX="153.0" layoutY="68.0" prefHeight="25.0" prefWidth="30.0" promptText="00" styleClass="text" />
+      <Label fx:id="labelDoisPontos2" layoutX="328.0" layoutY="65.0" text=":">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textHourEndMM" alignment="CENTER" editable="false" layoutX="336.0" layoutY="67.0" prefHeight="25.0" prefWidth="30.0" promptText="00" styleClass="text" />
+      <TextField fx:id="textHourStart" alignment="CENTER" editable="false" layoutX="106.0" layoutY="122.0" prefHeight="25.0" prefWidth="74.0" promptText="00:00" styleClass="text" />
+      <TextField fx:id="textHourEnd" alignment="CENTER" editable="false" layoutX="293.0" layoutY="121.0" prefHeight="25.0" prefWidth="68.0" promptText="00:00" styleClass="text" />
+      <Button fx:id="btnAddEnd" alignment="CENTER" layoutX="376.0" layoutY="66.0" mnemonicParsing="false" onAction="#onBtnAddStartonEnd" prefHeight="54.0" prefWidth="60.0" styleClass="btn_add" text="ADD" textAlignment="CENTER" />
+      <TextField fx:id="textHourTime" alignment="CENTER" editable="false" layoutX="330.0" layoutY="194.0" prefHeight="46.0" prefWidth="101.0" promptText="00:00" styleClass="text" />
+      <Label fx:id="textTime" layoutX="281.0" layoutY="193.0" styleClass="title" text="Time">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbStartHH" layoutX="10.0" layoutY="68.0" prefHeight="25.0" prefWidth="89.0" promptText="Hour" styleClass="cb_h_start" />
+      <ComboBox fx:id="cbStartMM" layoutX="7.0" layoutY="122.0" prefHeight="25.0" prefWidth="89.0" promptText="Minute" styleClass="cb_m_start" />
+      <ComboBox fx:id="cbEndHH" layoutX="198.0" layoutY="66.0" prefHeight="25.0" prefWidth="89.0" promptText="Hour" styleClass="cb_h_end" />
+      <ComboBox fx:id="cbEndMM" layoutX="195.0" layoutY="120.0" prefHeight="25.0" prefWidth="89.0" promptText="Minute" styleClass="cb_m_end" />
+      <Label fx:id="labelResposta1" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="507.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelResult2" alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="572.0" textFill="#ff0404" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="12.0" />
+      <Label layoutX="231.0" layoutY="509.0" text="SALVAR" />
+      <Label layoutX="116.0" layoutY="264.0" text="DOM" />
+      <Label layoutX="120.0" layoutY="296.0" text="SEG" />
+      <Label layoutX="122.0" layoutY="329.0" text="TER" />
+      <Label layoutX="119.0" layoutY="362.0" text="QUA" />
+      <Label layoutX="122.0" layoutY="396.0" text="QUI" />
+      <Label layoutX="123.0" layoutY="430.0" text="SEX" />
+      <Label layoutX="123.0" layoutY="465.0" text="SÁB" />
+      <Label layoutX="20.0" layoutY="221.0" text="Cadastrar Matéria" />
+      <Label layoutX="281.0" layoutY="221.0" text="Tempo" />
+      <Label layoutX="111.0" layoutY="19.0" text="Hora Inicial" />
+      <Label layoutX="296.0" layoutY="19.0" text="Hora Final" />
+      <Label layoutX="18.0" layoutY="91.0" text="Hora" />
+      <Label layoutX="15.0" layoutY="147.0" text="Minuto" />
+      <Label layoutX="205.0" layoutY="91.0" text="Hora" />
+      <Label layoutX="204.0" layoutY="147.0" text="Minuto" />
+      <Label layoutX="381.0" layoutY="126.0" text="Adicionar" />
+   </children>
+   <stylesheets>
+      <URL value="@../application/css/register_form.css" />
+      <URL value="@../application/css/text_fields.css" />
+   </stylesheets>
+</AnchorPane>

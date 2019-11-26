@@ -1,0 +1,10 @@
+/* CSS Times */
+
+.anchor_pane_home {
+	-fx-background-color:white;	
+}
+
+.btn_register, .btn_update, .btn_delete{
+	-fx-background-color:white;
+	-fx-border-color:black;
+}

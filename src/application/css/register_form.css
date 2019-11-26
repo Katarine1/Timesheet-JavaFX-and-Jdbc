@@ -1,0 +1,25 @@
+/* CSS Register Form */
+
+.anchor_pane {
+	-fx-background-color:white;
+}
+
+.cb_h_start, .cb_h_end, .cb_m_start, .cb_m_end {
+	-fx-background-color:white;
+}
+
+.btn_add, .btn_save {
+	-fx-background-color:blue;
+	-fx-border-color:white;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+}
+
+.btn_sunday, .btn_monday, .btn_tuesday, 
+.btn_fourth, .btn_fifth, .btn_friday, .btn_saturday
+{
+	-fx-background-color:white;
+	-fx-border-color:black;
+	-fx-text-fill: black;
+	-fx-font-weight: bold;
+} 

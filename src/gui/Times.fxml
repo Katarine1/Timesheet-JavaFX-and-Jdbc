@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="400.0" minWidth="400.0" prefHeight="494.0" prefWidth="1069.0" styleClass="anchor_pane" stylesheets="@../application/css/times.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.TimesController">
+   <children>
+      <TableView fx:id="tableViewTime" layoutY="34.0" prefHeight="460.0" prefWidth="1069.0" styleClass="table_time" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="34.0">
+        <columns>
+            <TableColumn fx:id="tableColumnHour" prefWidth="75.0" resizable="false" styleClass="cell_time" text="Time" />
+            <TableColumn fx:id="tableColumnHourStart" prefWidth="75.0" resizable="false" styleClass="cell_start" text="Start Hour" />
+          <TableColumn fx:id="tableColumnHourEnd" prefWidth="75.0" resizable="false" styleClass="cell_end" text="End Hour" />
+            <TableColumn fx:id="tableColumnSunday" prefWidth="120.0" resizable="false" styleClass="cell_sunday" text="Sunday" />
+            <TableColumn fx:id="tableColumnMonday" prefWidth="120.0" resizable="false" styleClass="cell_monday" text="Monday" />
+            <TableColumn fx:id="tableColumnTuesday" prefWidth="120.0" resizable="false" styleClass="cell_tuesday" text="Tuesday" />
+            <TableColumn fx:id="tableColumnFourth" prefWidth="120.0" resizable="false" styleClass="cell_fourth" text="Fourth" />
+            <TableColumn fx:id="tableColumnFifth" prefWidth="120.0" resizable="false" styleClass="cell_fifth" text="Fifth" />
+            <TableColumn fx:id="tableColumnFriday" prefWidth="120.0" resizable="false" styleClass="cell_friday" text="Friday" />
+            <TableColumn fx:id="tableColumnSaturday" prefWidth="120.0" resizable="false" styleClass="cell_saturday" text="Saturday" />
+        </columns>
+      </TableView>
+      <Label layoutX="20.0" layoutY="14.0" text="Tempo" />
+      <Label layoutX="82.0" layoutY="14.0" text="Hora Início" />
+      <Label layoutX="160.0" layoutY="14.0" text="Hora Final" />
+      <Label layoutX="259.0" layoutY="14.0" text="Domingo" />
+      <Label layoutX="381.0" layoutY="14.0" text="Segunda" />
+      <Label layoutX="506.0" layoutY="14.0" text="Terça" />
+      <Label layoutX="625.0" layoutY="14.0" text="Quarta" />
+      <Label layoutX="745.0" layoutY="14.0" text="Quinta" />
+      <Label layoutX="868.0" layoutY="14.0" text="Sexta" />
+      <Label layoutX="981.0" layoutY="14.0" text="Sábado" />
+   </children>
+</AnchorPane>
