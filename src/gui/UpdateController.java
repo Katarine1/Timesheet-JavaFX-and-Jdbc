@@ -35,7 +35,7 @@ public class UpdateController implements Initializable {
 	private static SimpleDateFormat format = new SimpleDateFormat("HH:mm");
 	
 	String sunday = null, monday = null, tuesday = null, fourth = null, fifth = null, friday = null, saturday = null;
-	String time = null, HHStart = null, MMStart = null, HHEnd = null, MMEnd = null, doisPntos1 = null, doisPntos2 = null;	
+	String time = null, HHStart = null, MMStart = null, HHEnd = null, MMEnd = null, doisPontos1 = null, doisPontos2 = null;	
 	String hourstart = null, hourend = null;
 	int id = 0;
 	
@@ -399,29 +399,53 @@ public class UpdateController implements Initializable {
 	}	
 	
 	public void calculeTime() {
-		HHStart = textHourStartHH.getText().toString();
-		MMStart = textHourStartMM.getText().toString();	
-		doisPntos1 = labelDoisPontos1.getText().toString();
-		textHourStart.setText(HHStart+doisPntos1+MMStart);
+		try {
+			HHStart = textHourStartHH.getText().toString();
+			MMStart = textHourStartMM.getText().toString();
+			doisPontos1 = labelDoisPontos1.getText().toString();
+			textHourStart.setText(HHStart + doisPontos1 + MMStart);
+	
+			HHEnd = textHourEndHH.getText().toString();
+			MMEnd = textHourEndMM.getText().toString();
+			doisPontos2 = labelDoisPontos2.getText().toString();
+			textHourEnd.setText(HHEnd + doisPontos2 + MMEnd);
+	
+			time = textHourTime.getText().toString();
+			hourstart = textHourStart.getText().toString();
+			hourend = textHourEnd.getText().toString();
+			
+			if(!HHStart.equals("") && !HHEnd.equals("") && 
+					!MMStart.equals("") && !MMEnd.equals("")) {
 		
-		HHEnd = textHourEndHH.getText().toString();
-		MMEnd = textHourEndMM.getText().toString();		
-		doisPntos2 = labelDoisPontos2.getText().toString();		
-		textHourEnd.setText(HHEnd+doisPntos2+MMEnd);
-		
-		time = textHourTime.getText().toString();
-		
-		double hS = 0, mS = 0, hE = 0, mE = 0;
-		
-		hS = Double.parseDouble(textHourStartHH.getText().toString());
-		mS = Double.parseDouble(textHourStartMM.getText().toString());
-		
-		hE = Double.parseDouble(textHourEndHH.getText().toString());
-		mE = Double.parseDouble(textHourEndMM.getText().toString());
-		
-		calculate = new CalculateTime();
-		String cal = calculate.calculateTime(hS, mS, hE, mE);
-		textHourTime.setText(cal);
+				if(!hourstart.equals("") && !hourend.equals("")) {
+					
+					int hS = 0, mS = 0, hE = 0, mE = 0;
+					
+					hS = Integer.parseInt(HHStart);
+					mS = Integer.parseInt(MMStart);
+			
+					hE = Integer.parseInt(HHEnd);
+					mE = Integer.parseInt(MMEnd);
+					
+					calculate = new CalculateTime();
+					String cal = calculate.calculateTime(hS, mS, hE, mE);
+					textHourTime.setText(cal);
+					labelResult1.setText("");
+					labelResult1.setText("");
+				}else {
+					labelResult1.setText("Select Hour and Minute");
+					labelResult1.setText("Selecione Hora e Minuto");
+				}
+			}else {
+				labelResult1.setText("Select Hour and Minute");
+				labelResult1.setText("Selecione Hora e Minuto");
+			}
+		}catch(NumberFormatException e) {
+			System.out.println(e.getMessage());
+		}
+		catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
 	}
 		
 	public void textSundayVisible() {

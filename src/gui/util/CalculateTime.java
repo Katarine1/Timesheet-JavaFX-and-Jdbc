@@ -10,7 +10,7 @@ public class CalculateTime {
 	int h = 0;
 	String result = null;
 		
-	public String calculateTime(double hS, double mS, double hE, double mE) {
+	public String calculateTime(int hS, int mS, int hE, int mE) {
 		
 		totalMinutos = ((hE * 60) + mE) - ((hS * 60) + mS); 
 		
